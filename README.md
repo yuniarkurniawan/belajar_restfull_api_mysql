@@ -9,13 +9,13 @@ The api use 3 tier architecture, you can see from structure below :
 
 blablusimple
  -- api/
-    |--- __init__.py
-    |--- config/
-    |--- models/
-    |--- routes/
-    |--- services/
-    |--- tests/
-    |--- utils/
+    --- __init__.py
+    --- config/
+    --- models/
+    --- routes/
+    --- services/
+    --- tests/
+    --- utils/
  -- cover/
  -- images/
  -- .coverage
