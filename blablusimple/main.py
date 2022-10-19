@@ -29,6 +29,10 @@ def create_app(config):
     app.register_blueprint(transaction_books_routes,
                            url_prefix='/api/v1/transaction_books')
 
+    @app.route('/avatar/<filename>')
+    def uploaded_file(filename):
+        return send_from_directory(app.config['UPLOAD_FOLDER'], filename)
+
     @app.after_request
     def add_header(response):
         return response
